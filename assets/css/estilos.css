@@ -1,0 +1,153 @@
+/*Generales*/
+
+    *, *::after, *::before {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    body {
+        
+    }
+
+
+
+/*Contenido*/
+
+
+    .contenido {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .contenido-principal {
+        padding: 3rem 0;
+    }
+
+    .contenido-principal h1{
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .contenido-principal h3{
+        margin-bottom: 1.2rem;
+        text-align: center;
+    }
+
+    .contenido-principal p{
+        text-align: justify;
+    }
+
+    .contenido-principal span{
+        display: block;
+        font-weight: bold;
+        letter-spacing: .2rem;
+        line-height: 2;
+    }
+
+    aside.contenedor {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sidebar {
+        border: 2px solid black;
+        background: #e1e1e1;
+    }
+    .lista {
+        list-style: none;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    h2 {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .lista li{
+        margin-left: .5rem;
+    }
+    .boton {
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+    }
+
+    .boton:hover {
+        cursor: pointer;
+        border: none;
+    }
+
+/*Colores*/
+
+    /* COLOR FONDO*/
+        .color-blanco{
+            background-color: #fff;
+        }
+        .color-negro{
+            background-color: #000;
+        }
+        .color-amarillo{
+            background-color: yellow;
+        }
+        .color-rosa{
+            background-color: pink;
+        }
+        .color-verde{
+            background-color: green;
+        }
+
+    /* COLOR TEXTO*/
+        .color-azul{
+            background-color: blue;
+        }
+        .color-morado{
+            background-color: purple;
+        }
+
+        .color-marron{
+            background-color: brown;
+        }
+
+        .color-gris{
+            background-color: gray;
+        }
+        .color-rojo{
+            background-color: red;
+        }
+
+@media (min-width: 1366px){
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-flow: column;
+    }
+    .sidebar {
+        height: 99.4vh;
+    }
+    aside {
+        height: 100%;
+    }
+    .contenido-principal {
+        grid-column: 2 / 9;
+    }
+    .lista {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .boton {
+        width: 65px;
+        height: 65px;
+    }
+}
