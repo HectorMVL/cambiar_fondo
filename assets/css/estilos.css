@@ -63,68 +63,107 @@
         background: #e1e1e1;
     }
     .lista {
+        width: 100%;
         list-style: none;
         display: flex;
         margin-bottom: 2rem;
+        justify-content: space-around;
     }
     h2 {
         margin-bottom: 1rem;
         text-transform: uppercase;
         text-align: center;
     }
-    .lista li{
-        margin-left: .5rem;
-    }
-    .boton {
+    .boton, .boton-bg {
         width: 40px;
         height: 40px;
         border: 1px solid black;
     }
 
-    .boton:hover {
+    .boton:hover, .boton-bg:hover {
         cursor: pointer;
         border: none;
     }
 
 /*Colores*/
 
-    /* COLOR FONDO*/
-        .color-blanco{
+    /* COLOR TEXTO*/
+        #texto-blanco{
             background-color: #fff;
         }
-        .color-negro{
+        #texto-negro{
             background-color: #000;
         }
-        .color-amarillo{
+        #texto-amarillo{
             background-color: yellow;
         }
-        .color-rosa{
+        #texto-rosa{
             background-color: pink;
         }
-        .color-verde{
+        #texto-verde{
             background-color: green;
         }
 
-    /* COLOR TEXTO*/
-        .color-azul{
+    /* COLOR FONDO*/
+        #fondo-azul{
             background-color: blue;
         }
-        .color-morado{
+        #fondo-morado{
             background-color: purple;
         }
 
-        .color-marron{
+        #fondo-marron{
             background-color: brown;
         }
 
-        .color-gris{
+        #fondo-gris{
             background-color: gray;
         }
-        .color-rojo{
+        #fondo-rojo{
             background-color: red;
         }
 
-@media (min-width: 1366px){
+    /* COLORES PARAR PODER TEXTO EN EL BODY*/
+
+        .texto-blanco{
+            color: white;
+        }
+        .texto-negro{
+            color: black;
+        }
+        .texto-amarillo{
+            color: yellow;
+        }
+        .texto-rosa{
+            color: pink;
+        }
+        .texto-verde{
+            color: green;
+        }
+
+        
+    /* COLORES PARAR PODER FONDO EN EL BODY*/
+
+        .fondo-azul{
+            background-color: blue;
+        }
+        .fondo-morado{
+            background-color: purple;
+        }
+
+        .fondo-marron{
+            background-color: brown;
+        }
+
+        .fondo-gris{
+            background-color: gray;
+        }
+        .fondo-rojo{
+            background-color: red;
+        }
+    /* MEDIA QUERIES*/
+
+@media (min-width: 728px){
     .contenido {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
@@ -144,9 +183,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
     }
 
-    .boton {
+    .boton, .boton-bg {
         width: 65px;
         height: 65px;
     }
