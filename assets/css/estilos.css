@@ -10,10 +10,8 @@
     }
 
     body {
-        
+        font-family: sans-serif;
     }
-
-
 
 /*Contenido*/
 
@@ -44,6 +42,8 @@
 
     .contenido-principal p{
         text-align: justify;
+        font-size: 1.3rem;
+        line-height: 1.4;
     }
 
     .contenido-principal span{
@@ -88,19 +88,19 @@
 /*Colores*/
 
     /* COLOR TEXTO*/
-        #texto-blanco{
-            background-color: #fff;
+        .texto-blanco{
+            background-color: white;
         }
-        #texto-negro{
-            background-color: #000;
+        .texto-negro{
+            background-color: black;
         }
-        #texto-amarillo{
+        .texto-amarillo{
             background-color: yellow;
         }
-        #texto-rosa{
+        .texto-rosa{
             background-color: pink;
         }
-        #texto-verde{
+        .texto-verde{
             background-color: green;
         }
 
@@ -125,42 +125,23 @@
 
     /* COLORES PARAR PODER TEXTO EN EL BODY*/
 
-        .texto-blanco{
+        #blanco{
             color: white;
         }
-        .texto-negro{
+        #negro{
             color: black;
         }
-        .texto-amarillo{
+        #amarillo{
             color: yellow;
         }
-        .texto-rosa{
+        #rosa{
             color: pink;
         }
-        .texto-verde{
+        #verde{
             color: green;
         }
 
-        
-    /* COLORES PARAR PODER FONDO EN EL BODY*/
-
-        .fondo-azul{
-            background-color: blue;
-        }
-        .fondo-morado{
-            background-color: purple;
-        }
-
-        .fondo-marron{
-            background-color: brown;
-        }
-
-        .fondo-gris{
-            background-color: gray;
-        }
-        .fondo-rojo{
-            background-color: red;
-        }
+     
     /* MEDIA QUERIES*/
 
 @media (min-width: 728px){
